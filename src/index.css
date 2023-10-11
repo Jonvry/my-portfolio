@@ -139,6 +139,7 @@ small {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
 .sampleProject {
@@ -157,17 +158,22 @@ small {
   border-radius: .6rem;
 }
 
+.ProjectIMG {
+  opacity: .8;
+}
+
 .sp_Details {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
   border-radius: .6rem;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(15, 15, 15, 0.32);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: rgba(15, 15, 15, 0.50);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transform: translateY(100%);
   transition: 0.5s;
 }
@@ -177,10 +183,14 @@ small {
   transition: 0.5s;
 }
 
+.sp_Details a {
+  width: 2rem;
+}
+
 
 h5 {
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -513,6 +523,10 @@ h5 {
   .navList {
     width: 75vw;
   }
+
+  .projectSection {
+    flex-direction: column;
+  }
 }
 
 
@@ -555,5 +569,6 @@ h5 {
     grid-template-columns: 1fr;
     row-gap: 3rem;
   }
+
 
 }
